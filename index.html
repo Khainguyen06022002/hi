@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>web du lịch</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="web du lịch">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="../Shop online frontend/assets/image/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <link rel="icon" type="image/png" sizes="16x16" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="../Shop online frontend/assets/css/style.css">
+  </head>
+  <body>
+    <div class="pay">
+        <div class="pay-title">Thanh toán</div>
+    </div>
+    <header class="header flex between-justify center-align">
+      <div class="header-logo flex center-align">
+        <div class="header-logo__img"><img src="../Shop online frontend/assets/image/image-header.webp" alt=""></div>
+        <div class="header-logo__txt header-white__txt">dép da cao cấp</div>
+      </div>
+      <div class="header-menu flex center-align">
+        <div class="header-menu__list pc-flex" id="header-menu__list"><a class="menu-list header-white__txt" href="#">Chi Nhánh</a><a class="menu-list header-white__txt" href="#">Khuyến Mãi</a><a class="menu-list header-white__txt" href="#">Kho</a><a class="menu-list header-white__txt" href="#">tư vấn</a>
+        <div class="header-menu__list--fullwidth"></div>
+        <div class="header-more">
+          <div class="header-white__txt">More</div>
+          <div class="header-more__item" id="header-more__item"></div>
+        </div>
+        <div class="header-menu__btn flex"> 
+          <div class="show-search-form menu-btn flex center-align center-justify btn--custom btn--left header-white__btn--red header-white__btn--sp">Thanh Toán</div>
+          <!-- <div class="menu-btn pc-flex center-align center-justify btn--right header-white__btn--white">プラン一覧</div> -->
+        </div>
+        <div class="btn-show-menu sp-flex center-align" id="show-menu-sp">
+          <div class="btn-show-menu__txt header-white__txt">MENU</div>
+          <div class="btn-show-menu__icon header-white__svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewbox="0 0 20 17">
+              <g id="Group_2199" data-name="Group 2199" transform="translate(-335 -20.5)">
+                <line id="Line_765" data-name="Line 765" x2="20" transform="translate(335 21)" fill="none" stroke="#fff" stroke-width="1"></line>
+                <line id="Line_766" data-name="Line 766" x2="16" transform="translate(339 29)" fill="none" stroke="#fff" stroke-width="1"></line>
+                <line id="Line_767" data-name="Line 767" x2="20" transform="translate(335 37)" fill="none" stroke="#fff" stroke-width="1"> </line>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="header-menu__modal--sp sp" id="header-menu__modal--sp">
+          <div class="menu-modal__row flex center-align between-justify">
+            <div class="header-logo flex center-align">
+              <div class="header-logo__img"><img src="../Shop online frontend/assets/image/common/header_logo.png" alt=""></div>
+              <div class="header-logo__txt header-white__txt">イビス大阪梅田</div>
+            </div>
+            <div class="close-btn-menu flex center-align" id="close-menu-sp">
+              <div class="close-menu__txt">CLOSE</div>
+              <div class="close-menu__icon flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13.707" height="13.707" viewbox="0 0 13.707 13.707">
+                  <g id="Group_2197" data-name="Group 2197" transform="translate(-338.646 -22.646)">
+                    <line id="Line_766" data-name="Line 766" x2="13" y2="13" transform="translate(339 23)" fill="none" stroke="#000" stroke-width="1"></line>
+                    <line id="Line_1851" data-name="Line 1851" x1="13" y2="13" transform="translate(339 23)" fill="none" stroke="#000" stroke-width="1"></line>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu__list--sp"><a class="menu-list header-white__txt flex center-align" href="#"> 
+              <div class="menu-list__EN">TOP</div>
+              <div class="menu-list__JP">-トップ</div></a><a class="menu-list header-white__txt flex center-align" href="#">
+              <div class="menu-list__EN">ROOM</div>
+              <div class="menu-list__JP">-客室紹介</div></a><a class="menu-list header-white__txt flex center-align" href="#">
+              <div class="menu-list__EN">FOOD</div>
+              <div class="menu-list__JP">-お食事</div></a><a class="menu-list header-white__txt flex center-align" href="#">
+              <div class="menu-list__EN">FACILITY</div>
+              <div class="menu-list__JP">-その他施設</div></a><a class="menu-list header-white__txt flex center-align" href="#">
+              <div class="menu-list__EN">ACTIVITY</div>
+              <div class="menu-list__JP">-アクティビティ</div></a><a class="menu-list header-white__txt flex center-align" href="#">
+              <div class="menu-list__EN">ACCESS</div>
+              <div class="menu-list__JP">-アクセス</div></a>
+            <div class="header-menu__btn flex"> 
+              <div class="show-search-form menu-btn flex center-align center-justify btn--left header-white__btn--red">空室予約</div>
+              <div class="menu-btn flex center-align center-justify btn--right header-white__btn--white">プラン一覧</div>
+            </div>
+            <div class="header-menu__language flex center-align"><span>Language</span>
+              <select name="language">
+                <option value="ja">ja  </option>
+                <option value="en" selected>en  </option>
+                <option value="vn">vn  </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="top-page">
+        <div class="mv-top">
+          <div class="mv-top__slide swiper pc" id="mv-top__slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide mv-top__item" data-index="0">
+                <div class="img-thumbnail relative"><img src="../Shop online frontend/assets/image/image-mv04.png" alt=""></div>
+              </div>
+              <div class="swiper-slide mv-top__item" data-index="1">
+                <div class="img-thumbnail relative"><img src="../Shop online frontend/assets/image/image-mv05.webp" alt=""></div>
+              </div>
+              <div class="swiper-slide mv-top__item" data-index="2">
+                <div class="img-thumbnail relative"><img src="../Shop online frontend/assets/image/image-mv06.webp" alt=""></div>
+              </div>
+            </div>
+            <div class="mv-top__run">
+              <div class="mv-top__process" id="mv-top__process"></div>
+            </div>
+            <div class="mv-top__moved">
+              <!-- <div class="swiper-button-prev mv-top__prev"></div> -->
+              <div class="swiper-pagination mv-top__pagination"></div>
+              <!-- <div class="swiper-button-next mv-top__next"></div> -->
+            </div>
+          </div>
+          <div class="mv-top__slide swiper sp" id="mv-top__slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide mv-top__item" data-index="0">
+                <div class="img-thumbnail relative"><img src="../Shop online frontend/assets/image/top/banner-top_img.png" alt=""></div>
+              </div>
+              <div class="swiper-slide mv-top__item" data-index="1">
+                <div class="img-thumbnail relative"><img src="../Shop online frontend/assets/image/top/banner-top_img.png" alt=""></div>
+              </div>
+              <div class="swiper-slide mv-top__item" data-index="2">
+                <div class="img-thumbnail relative"><img src="../Shop online frontend/assets/image/top/banner-top_img.png" alt=""></div>
+              </div>
+            </div>
+            <div class="mv-top__run">
+              <div class="mv-top__process" id="mv-top__process"></div>
+            </div>
+            <div class="mv-top__moved">
+              <!-- <div class="swiper-button-prev mv-top__prev"></div> -->
+              <div class="swiper-pagination mv-top__pagination"></div>
+              <!-- <div class="swiper-button-next mv-top__next"></div> -->
+            </div>
+          </div>
+        </div>
+      <div class="location">
+          <div class="location__chill">
+              <div class="location__letter">
+                  <h3>đề xuất</h3>
+                  <h2>sản phẩm</h2>
+              </div>
+          </div>
+          <div class="location__image__1">
+                <div class="location__photo"> 
+                    <div class="icon__grap">
+                        <i class="ti-rocket"></i>
+                    </div>
+                    <div class="location__photo__chu">
+                        <h1>giày nike cổ cao</h1>
+                        <p>1k sẩn phẩm đã bán</p>
+                    </div>
+                    <img class="location__photo__chill" src="./assets/image/sp01.jpg" alt="">
+                    <div class="location__stuff">
+                        <div class="location__stuff__chill">
+                            <h3>free ship</h3>
+                            <a href="">
+                                <h4>389.000 đ</h4>
+                            </a>
+                            <a href="">
+                                <div class="stuff__chill">
+                                    <p>đặt hàng</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="location__photo"> 
+                    <div class="icon__grap">
+                        <i class="ti-rocket"></i>
+                    </div>
+                    <div class="location__photo__chu">
+                        <h1>giày nike cổ cao</h1>
+                        <p>1k sẩn phẩm đã bán</p>
+                    </div>
+                    <img class="location__photo__chill" src="./assets/image/sp-02.jpg" alt="">
+                    <div class="location__stuff">
+                        <div class="location__stuff__chill">
+                            <h3>free ship</h3>
+                            <a href="">
+                                <h4>389.000 đ</h4>
+                            </a>
+                            <a href="">
+                                <div class="stuff__chill">
+                                    <p>đặt hàng</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="location__photo"> 
+                    <div class="icon__grap">
+                        <i class="ti-rocket"></i>
+                    </div>
+                    <div class="location__photo__chu">
+                        <h1>giày nike cổ cao</h1>
+                        <p>1k sẩn phẩm đã bán</p>
+                    </div>
+                    <img class="location__photo__chill" src="./assets/image/sp-03.jpg" alt="">
+                    <div class="location__stuff">
+                        <div class="location__stuff__chill">
+                            <h3>free ship</h3>
+                            <a href="">
+                                <h4>389.000 đ</h4>
+                            </a>
+                            <a href="">
+                                <div class="stuff__chill">
+                                    <p>đặt hàng</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="location__image__1">
+                <div class="location__photo">
+                    <div class="icon__grap">
+                        <i class="ti-wordpress"></i>
+                    </div> 
+                    <div class="location__photo__chu">
+                        <h1>giày đá bóng</h1>
+                        <p>599 sản phẩm đã được bán </p>
+                    </div>
+                    <img class="location__photo__chill" src="./assets/image/sp-04.jpg" alt="">
+                    <div class="location__stuff">
+                        <div class="location__stuff__chill">
+                            <h3>free ship</h3>
+                            <a href="">
+                                <h4>giá cả</h4>
+                            </a>
+                            <a href="">
+                                <div class="stuff__chill">
+                                    <p>đặt hàng</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="location__photo">
+                    <div class="icon__grap">
+                        <i class="ti-wordpress"></i>
+                    </div> 
+                    <div class="location__photo__chu">
+                        <h1>giày trượt</h1>
+                        <p>599 sản phẩm đã được bán </p>
+                    </div>
+                    <img class="location__photo__chill" src="./assets/image/sp-05.jpg" alt="">
+                    <div class="location__stuff">
+                        <div class="location__stuff__chill">
+                            <h3>free ship</h3>
+                            <a href="">
+                                <h4>giá cả</h4>
+                            </a>
+                            <a href="">
+                                <div class="stuff__chill">
+                                    <p>đặt hàng</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="location__photo">
+                    <div class="icon__grap">
+                        <i class="ti-wordpress"></i>
+                    </div> 
+                    <div class="location__photo__chu">
+                        <h1>giày đá bóng</h1>
+                        <p>599 sản phẩm đã được bán </p>
+                    </div>
+                    <img class="location__photo__chill" src="./assets/image/sp06.jpg" alt="">
+                    <div class="location__stuff">
+                        <div class="location__stuff__chill">
+                            <h3>free ship</h3>
+                            <a href="">
+                                <h4>giá cả</h4>
+                            </a>
+                            <a href="">
+                                <div class="stuff__chill">
+                                    <p>đặt hàng</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>  
+      </div>  
+      <div class="view">
+          <img class="view__chill" src="./assets/image/tiec.jpg" alt="">
+          <div  class="view__chu">
+              <h1> Your <br> Next Holiday</h1>
+              <a href="./addProduct/newProduct.html">
+                  <div class="view__chu__chill">
+                      <p>kho lưu trữ</p>
+                  </div>
+              </a>
+          </div>
+      </div>
+      <!--bán hàng-->
+      <div class="sell"> 
+          <div class="sell__letter">
+              <div class="sell__letter__chill">
+                  <h3>OUR PROMOTIONS</h3>
+                  <h2>Các gói khuyến mãi</h2>
+              </div>
+          </div>
+          <div class="sell__shop">
+              <div class="sell__shop__photo">
+                  <img src="./assets/image/giay-da01.webp" alt=""> 
+                  <div class="shop__photo__like"> 
+                      <h1>giày da</h1> 
+                      <a href="#">
+                          yêu thích <i class="ti-heart"></i>
+                      </a>
+                  </div>
+                  <div class="shop__photo__price">
+                      <h1>giá khuyến mãi:</h1>
+                      <p>1.499.000 VNĐ</p>
+                  </div>
+                  <div class="shop__photo__put">
+                      <div>
+                          <p>
+                              giày da tại DANANGSALE có nhiều mẫu mã đa dạng,
+                               mang lại nhiều phong cách đáng yêu, thời thượng,
+                               lại vừa tôn dáng cho bạn ngay cả khi trời rét buốt
+                          </p>
+                      </div>
+                  </div>
+                  <div class="shop__photo__link">
+                      <a href="">
+                          <div class="put__chill__1">
+                              <p>details</p>
+                          </div> 
+                      </a>
+                  </div>
+              </div>
+              <div class="sell__shop__photo">
+                  <img src="./assets/image/giay-da02.webp" alt="">
+                  <div class="shop__photo__like"> 
+                      <h1>giày thể thao</h1> 
+                      <a href="#">
+                          <p>yêu thích 
+                              <i class="ti-heart"></i>
+                          </p>
+                      </a>
+                  </div>
+                  <div class="shop__photo__price">
+                      <h1>giá khuyến mãi</h1>
+                      <p>2.000.000 VNĐ</p>
+                  </div>
+                  <div class="shop__photo__put">
+                      <p>
+                          giày thể thao tại DANANGSALE có nhiều mẫu mã đa dạng,
+                           mang lại nhiều phong cách đáng yêu, thời thượng, 
+                          lại vừa tôn dáng cho bạn gái ngay cả khi trời rét buốt
+                      </p>
+                  </div>
+                  <div class="shop__photo__link">
+                      <a href="">
+                          <div class="put__chill__2">
+                              <p>details</p>
+                          </div> 
+                      </a>
+                  </div>
+              </div>
+              <div class="sell__shop__photo">
+                  <img src="./assets/image/giày-da03.jpg" alt="">
+                  <div class="shop__photo__like"> 
+                      <h1>giày đá bóng</h1> 
+                      <a href="#">
+                          <p>yêu thích 
+                              <i class="ti-heart"></i>
+                          </p>
+                      </a>
+                  </div>
+                  <div class="shop__photo__price">
+                      <h1>giá khuyến mãi</h1>
+                      <p>459.000 VNĐ</p>
+                  </div>
+                  <div class="shop__photo__put">
+                      <p>
+                          giày đá bóng tại DANANGSALE có nhiều mẫu mã đa dạng,
+                           mang lại nhiều phong cách đáng yêu, thời thượng, 
+                          lại vừa tôn dáng cho bạn gái ngay cả khi trời rét buốt
+                      </p>
+                  </div>
+                  <div class="shop__photo__link">
+                      <a href="">
+                          <div class="put__chill__3">
+                              <p>details</p>
+                          </div> 
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- kết -->
+    <div class="footer">
+        <div class="footer__photo">
+            <!-- <img src="./assets/footer-hot.jpg" alt=""> -->
+        </div>
+        <div class="footer__introduce">
+            <div class="footer__introduce__chill">
+                <div>
+                    <h1>
+                        Liên hệ với chúng <br> tôi
+                    </h1>
+                </div>
+                <div class="footer__search">
+                    <form>
+                        <input class="footer__search__chill" type="text" name="search" placeholder=" ">
+                    </form>
+                    <div class="footer__search__send">
+                        <a href="#">
+                            <div>
+                                <p>GỬI</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__frames">
+                <div class="footer__frames__photo">
+                    <!-- <img src="./assets/img/logo.png" alt=""> -->
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br> Curabitur ut diam et nibh condimentum venenatis eu ac
+                        <br> magnasin. Quisque interdum est mauris, eget ullamcorper.
+                    </p>
+                    <div class="footer__frames__logo">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__frames__letter">
+                    <p>đại lý của chúng tôi</p>
+                    <ul>
+                        <li>Dịch vụ</li>
+                        <li>Người bảo hiểm</li>
+                        <li>Hang</li>
+                        <li>Thời trang</li>
+                        <li>Thanh toán</li>
+                    </ul>
+                </div>
+                <div class="footer__frames__letter">
+                    <p>ĐỐI TÁC</p>
+                    <ul>
+                        <li> Đặt trước</li>
+                        <li>Ôtô cho thuê</li>
+                        <li>HostelWorld</li>
+                        <li>Trivago</li>
+                        <li>TripAdvisor</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__frames__last">
+                <p class="footer__frames-last--text">Design by Huy Vu and team</p>
+                <h1>2023</h1>
+            </div>
+        </div>
+    </div>
+    <script src="../Shop online frontend/assets/js/jquery.min.js"></script>
+    <script src="../Shop online frontend/assets/js/jquery-validate.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="../Shop online frontend/assets/js/data.js"></script>
+    <script src="../Shop online frontend/assets/js/data-query.js"></script>
+    <script src="../Shop online frontend/assets/js/trans.js"></script>
+    <script src="../Shop online frontend/assets/js/common.js"></script>
+  </body>
+</html>
